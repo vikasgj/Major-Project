@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module" defer></script>
     <script src="script.js" defer></script>
-</head>
 
-</html>
-    <!-- Add the required Lovable script tag -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script src="script.js" defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,25 +27,25 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="dashboard.html" class="dashboard-link">Dashboard</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Smart Waste Management Solutions</h1>
                 <p>Our IoT-powered waste management system helps cities optimize collection routes, reduce operational
                     costs, and improve sustainability with real-time bin monitoring.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary"><i class="fas fa-play-circle"></i> Watch Demo</a>
-                    <a href="#" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
+                    <a href="img/Project Video.mp4" class="btn btn-primary"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                    <a href="#about" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -55,11 +55,24 @@
         </div>
     </section>
 
-    <section class="how-it-works">
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are an IoT-focused company building sustainable waste management solutions for smarter cities. Our mission is to empower communities with smart technology to manage waste effectively, sustainably, and affordably.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="services">
         <div class="container">
             <h2>How It Works</h2>
-            <p class="section-description">Our intelligent system uses IoT sensors, AI algorithms, and cloud computing
-                to revolutionize waste management operations.</p>
+                <ul class="section-description">
+                    <li><strong>IoT Sensors:</strong> Installed in bins to detect fill levels, temperature, and waste type.</li>
+                    <li><strong>Cloud Connectivity:</strong> Data is transmitted in real-time for centralized monitoring.</li>
+                    <li><strong>AI Optimization:</strong> Algorithms analyze trends to schedule timely collections.</li>
+                    <li><strong>Smart Routing:</strong> Dynamic routing cuts down fuel use and boosts efficiency.</li>
+                    <li><strong>Live Dashboard:</strong> City managers can monitor, alert, and plan using real-time insights.</li>
+                </ul>
+
 
             <div class="features-grid">
                 <div class="feature-card">
@@ -90,6 +103,16 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to work with us? Reach out!</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@quadsegretronics.com</p>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -107,16 +130,16 @@
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h3>Contact Us</h3>
+                    <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
                     <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
                     <p><i class="fas fa-envelope"></i> info@quadsegretronics.com</p>
@@ -129,5 +152,4 @@
         </div>
     </footer>
 </body>
-
 </html>
